@@ -46,21 +46,17 @@ const productsList = [
 function ProductList() {
   const [products, setProduct] = useState(productsList);
 
-  const addProduct = (id, data) => {
-    let product = products.find(id);
-    console.log(product);
-
-    setProduct({
-      ...products,
-      ...data,
-    });
+  const addProduct = (data) => {
+    // let product = products.find(id);
+    // console.log(product);
+    console.log(data);
+    setProduct([...products, data]);
   };
-
   const construsctor = () => {
     let newTitle = "Nuevo titulo";
     let newDescription = "Nueva Descripción";
     let newPrice = 27;
-
+    let newId = Date.now();
     addProduct({
       id: newId,
       title: newTitle,
@@ -71,13 +67,17 @@ function ProductList() {
 
   const deleteproduct = (id) => {
     console.log(id);
+
+    let newList = products.filter((product) => id !== product.id);
+    console.log(newList);
+
+    setProduct(newList);
     //filtrar
     //Actualizar el estado
   };
   return (
     <div className={styles.infoCard}>
       <button onClick={construsctor}>Update Product</button>
-
       {products.map((cv) => {
         return (
           <>
