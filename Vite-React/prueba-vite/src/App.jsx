@@ -6,6 +6,7 @@ import CounterApp from "./Estados/counter";
 import Conditional from "./Estados/Conditional";
 import ProductList from "./Estados/ProductList";
 import ToDoList from "./Estados/ToDoList";
+import MakeToDoList from "./Estados2/MakeToDoList";
 
 function App() {
   //   const product = [
@@ -77,7 +78,8 @@ function App() {
       {/* <CounterApp />
       <Conditional /> */}
       {/* <ProductList /> */}
-      <ToDoList />
+      {/* <ToDoList /> */}
+      <MakeToDoList />
     </>
   );
 }
