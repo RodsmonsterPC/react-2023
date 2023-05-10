@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 
+// codigo de la clase: https://stackblitz.com/edit/react-we4hmj?file=public%2Findex.html,src%2FApp.js
+
 //clima puede ser soleado, congelado, normal
+
+//Api rick and morty: https://rickandmortyapi.com/api/character/?name=rick
 
 function Ejercicio1() {
   //   const [weather, setWeather] = useState("soleado");

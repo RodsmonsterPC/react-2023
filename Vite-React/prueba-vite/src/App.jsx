@@ -8,6 +8,7 @@ import ProductList from "./Estados/ProductList";
 import ToDoList from "./Estados/ToDoList";
 import MakeToDoList from "./Estados2/MakeToDoList";
 import Ejercicio1 from "./Effects/Ejercicio1";
+import RickAndMorty from "./RickAndMorty/RickAndMorty";
 
 function App() {
   //   const product = [
@@ -81,7 +82,8 @@ function App() {
       {/* <ProductList /> */}
       {/* <ToDoList /> */}
       {/* <MakeToDoList /> */}
-      <Ejercicio1 />
+      {/* <Ejercicio1 /> */}
+      <RickAndMorty />
     </>
   );
 }
